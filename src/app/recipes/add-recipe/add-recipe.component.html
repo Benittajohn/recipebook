@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <h2>Add New Recipe</h2>
+  <form (ngSubmit)="addRecipe()" #recipeForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" [(ngModel)]="newRecipe.name" name="name" required #name="ngModel">
+      <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
+        <div *ngIf="name.errors?.['required']">Name is required.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="vegNonveg">Veg/Non-Veg:</label>
+      <select class="form-control" [(ngModel)]="newRecipe.vegNonveg" name="vegNonveg" required #vegNonveg="ngModel">
+        <option *ngIf="!vegNonveg.value" value="" disabled>Choose one</option>
+        <option value="1">Non-Veg</option>
+        <option value="2">Veg</option>
+      </select>
+      <div *ngIf="vegNonveg.invalid && (vegNonveg.dirty || vegNonveg.touched)" class="text-danger">
+        <div *ngIf="vegNonveg.errors?.['required']">Veg/Non-Veg selection is required.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="type">Type:</label>
+      <input type="text" class="form-control" [(ngModel)]="newRecipe.type" name="type" required #type="ngModel">
+      <div *ngIf="type.invalid && (type.dirty || type.touched)" class="text-danger">
+        <div *ngIf="type.errors?.['required']">Type is required.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="image">Image:</label>
+      <input type="text" class="form-control" [(ngModel)]="newRecipe.image" name="image" required #image="ngModel">
+      <div *ngIf="image.invalid && (image.dirty || image.touched)" class="text-danger">
+        <div *ngIf="image.errors?.['required']">Image URL is required.</div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary add-btn" [disabled]="recipeForm.invalid">Add Recipe</button>
+  </form>
+</div>

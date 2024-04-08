@@ -1,0 +1,248 @@
+[
+    {
+      "id":1,
+      "name": "Chicken Biryani",
+      "ingredients": ["Basmati rice", "Chicken", "Onions", "Tomatoes"],
+      "steps": ["Wash and soak basmati rice for 30 minutes.", "Cook chicken with spices until tender."],
+      "VegNonveg":1,
+      "Type":"MainDish",
+      "image":"biryani"
+    },
+    {
+      "id":2,
+      "name": "Vegetable Pulao",
+      "ingredients": ["Basmati rice", "Mixed vegetables", "Onions", "Spices"],
+      "steps": ["Wash and soak basmati rice for 30 minutes.", "Sauté mixed vegetables with onions and spices."],
+      "VegNonveg":2,
+      "Type":"MainDish",
+      "image":"vegetablepulao"
+    },
+    {
+        "id": 3,
+        "name": "Chicken 65",
+        "ingredients": [
+          "Chicken (boneless)",
+          "Curd (yogurt)",
+          "Red chili powder",
+          "Turmeric powder",
+          "Ginger-garlic paste",
+          "Cornflour",
+          "Egg",
+          "Curry leaves",
+          "Green chilies",
+          "Coriander leaves",
+          "Lemon juice",
+          "Salt",
+          "Oil (for frying)"
+        ],
+        "steps": [
+          "Marinate chicken pieces with curd, red chili powder, turmeric powder, ginger-garlic paste, and salt. Let it marinate for at least 1 hour.",
+          "Add cornflour and beaten egg to the marinated chicken. Mix well to coat the chicken pieces.",
+          "Heat oil in a pan for frying. Once the oil is hot, deep fry the marinated chicken until golden and crispy. Drain excess oil on paper towels.",
+          "In a separate pan, heat a little oil. Add curry leaves and slit green chilies. Sauté for a minute.",
+          "Add fried chicken pieces to the pan along with chopped coriander leaves and lemon juice. Toss everything together until well combined.",
+          "Serve hot as an appetizer or as a side dish with rice or roti."
+        ],
+        "VegNonveg": 1,
+        "Type": "Starter",
+        "image":"chicken65"
+      },
+      
+      {
+        "id": 4,
+        "name": "Gobi Manchurian",
+        "ingredients": [
+          "Cauliflower (florets)",
+          "All-purpose flour",
+          "Cornflour",
+          "Ginger-garlic paste",
+          "Green chilies (chopped)",
+          "Spring onions (chopped)",
+          "Soy sauce",
+          "Tomato sauce",
+          "Chili sauce",
+          "Vinegar",
+          "Salt",
+          "Oil (for frying)"
+        ],
+        "steps": [
+          "Clean and blanch cauliflower florets in hot water for a few minutes. Drain and set aside.",
+          "In a bowl, make a batter using all-purpose flour, cornflour, ginger-garlic paste, chopped green chilies, and salt. Add water gradually to form a thick batter.",
+          "Dip the blanched cauliflower florets in the batter, ensuring they are well coated.",
+          "Heat oil in a pan for deep frying. Once the oil is hot, fry the coated cauliflower florets until golden brown and crispy. Drain excess oil on paper towels.",
+          "In another pan, heat a little oil. Add chopped spring onions and sauté for a minute.",
+          "Add soy sauce, tomato sauce, chili sauce, and vinegar to the pan. Stir well.",
+          "Add the fried cauliflower florets to the sauce mixture. Toss everything together until the florets are evenly coated with the sauce.",
+          "Garnish with chopped spring onions and serve hot as an appetizer or as a side dish with fried rice or noodles."
+        ],
+        "VegNonveg": 2,
+        "Type": "Starter",
+        "image":"gobimanchurian"
+      },
+      
+        
+      {
+        "id": 5,
+        "name": "Tiramisu",
+        "ingredients": [
+          "Ladyfinger biscuits",
+          "Espresso coffee",
+          "Mascarpone cheese",
+          "Heavy cream",
+          "Sugar",
+          "Cocoa powder",
+          "Dark chocolate (grated)"
+        ],
+        "steps": [
+          "Brew strong espresso coffee and let it cool to room temperature.",
+          "In a bowl, beat heavy cream with sugar until stiff peaks form.",
+          "In another bowl, whisk mascarpone cheese until smooth.",
+          "Gently fold the whipped cream into the mascarpone cheese until well combined.",
+          "Dip ladyfinger biscuits into the cooled espresso coffee, making sure not to soak them for too long.",
+          "Arrange a layer of soaked ladyfingers in the bottom of a serving dish.",
+          "Spread a layer of the mascarpone cream mixture over the ladyfingers.",
+          "Repeat the layers of soaked ladyfingers and mascarpone cream until the dish is filled.",
+          "Cover and refrigerate the tiramisu for at least 4 hours or overnight to set.",
+          "Before serving, dust the top of the tiramisu with cocoa powder and sprinkle grated dark chocolate for garnish."
+        ],
+        "VegNonveg": 2,
+        "Type": "Dessert",
+        "image":"tarimasu"
+      },
+      
+      {
+        "id": 6,
+        "name": "Chocolate Chip Cookies",
+        "ingredients": [
+          "All-purpose flour",
+          "Baking soda",
+          "Salt",
+          "Unsalted butter (softened)",
+          "Granulated sugar",
+          "Brown sugar",
+          "Egg",
+          "Vanilla extract",
+          "Semisweet chocolate chips"
+        ],
+        "steps": [
+          "Preheat oven to 350°F (175°C) and line baking sheets with parchment paper.",
+          "In a bowl, whisk together flour, baking soda, and salt.",
+          "In another large bowl, beat softened butter, granulated sugar, and brown sugar until creamy.",
+          "Add egg and vanilla extract to the butter-sugar mixture and beat until well combined.",
+          "Gradually add the flour mixture to the wet ingredients, mixing until just combined.",
+          "Fold in semisweet chocolate chips until evenly distributed throughout the dough.",
+          "Drop rounded tablespoons of dough onto the prepared baking sheets, leaving space between each cookie.",
+          "Bake for 10-12 minutes until cookies are golden brown around the edges.",
+          "Let the cookies cool on the baking sheets for a few minutes before transferring them to a wire rack to cool completely.",
+          "Enjoy the delicious homemade chocolate chip cookies!"
+        ],
+        "VegNonveg": 1,
+        "Type": "Dessert",
+        "image":"cookie"
+      },
+
+      {
+        "id": 7,
+        "name": "Spaghetti Carbonara",
+        "ingredients": [
+          "Spaghetti",
+          "Eggs",
+          "Pecorino Romano cheese",
+          "Guanciale or pancetta",
+          "Black pepper",
+          "Salt"
+        ],
+        "steps": [
+          "Cook spaghetti according to package instructions until al dente.",
+          "In a bowl, whisk together eggs, grated Pecorino Romano cheese, and freshly ground black pepper.",
+          "In a skillet, cook diced guanciale or pancetta until crispy.",
+          "Drain cooked spaghetti and add it to the skillet with the crispy guanciale or pancetta. Toss to combine.",
+          "Remove the skillet from heat and quickly stir in the egg-cheese mixture, ensuring the eggs coat the spaghetti but do not scramble.",
+          "Season with salt to taste and serve immediately, garnished with additional grated cheese and black pepper if desired."
+        ],
+        "VegNonveg": 2,
+        "Type": "MainDish",
+        "image": "spaghetti_carbonara"
+      },
+      {
+        "id": 8,
+        "name": "Caprese Salad",
+        "ingredients": [
+          "Fresh tomatoes",
+          "Fresh mozzarella cheese",
+          "Fresh basil leaves",
+          "Extra virgin olive oil",
+          "Balsamic vinegar",
+          "Salt",
+          "Black pepper"
+        ],
+        "steps": [
+          "Slice tomatoes and fresh mozzarella cheese into rounds of equal thickness.",
+          "Arrange tomato and mozzarella slices alternately on a serving platter.",
+          "Tuck fresh basil leaves between the tomato and mozzarella slices.",
+          "Drizzle extra virgin olive oil and balsamic vinegar over the arranged salad.",
+          "Season with salt and freshly ground black pepper to taste.",
+          "Serve immediately as a refreshing appetizer or side dish."
+        ],
+        "VegNonveg": 1,
+        "Type": "Starter",
+        "image": "caprese_salad"
+      },
+      {
+        "id": 9,
+        "name": "Chicken Alfredo Pasta",
+        "ingredients": [
+          "Fettuccine pasta",
+          "Boneless chicken breast",
+          "Heavy cream",
+          "Parmesan cheese",
+          "Garlic",
+          "Butter",
+          "Salt",
+          "Black pepper",
+          "Parsley (optional, for garnish)"
+        ],
+        "steps": [
+          "Cook fettuccine pasta according to package instructions until al dente.",
+          "Season chicken breast with salt and black pepper, then grill or pan-sear until fully cooked. Slice into strips.",
+          "In a large skillet, melt butter over medium heat. Add minced garlic and sauté until fragrant.",
+          "Pour in heavy cream and bring to a simmer. Add grated Parmesan cheese and stir until melted and the sauce thickens.",
+          "Toss cooked pasta and sliced chicken in the Alfredo sauce until fully coated.",
+          "Serve hot, garnished with chopped parsley if desired."
+        ],
+        "VegNonveg": 2,
+        "Type": "Main Course",
+        "image": "chicken_alfredo_pasta"
+      },
+      {
+        "id": 10,
+        "name": "Mango Salsa",
+        "ingredients": [
+          "Ripe mangoes",
+          "Red bell pepper",
+          "Red onion",
+          "Fresh cilantro",
+          "Jalapeño pepper",
+          "Lime juice",
+          "Salt",
+          "Black pepper"
+        ],
+        "steps": [
+          "Dice ripe mangoes, red bell pepper, red onion, and jalapeño pepper into small pieces.",
+          "Chop fresh cilantro finely.",
+          "Combine all diced ingredients in a mixing bowl.",
+          "Drizzle lime juice over the mixture and season with salt and black pepper to taste.",
+          "Stir well to combine all ingredients.",
+          "Refrigerate for at least 30 minutes before serving to allow flavors to meld.",
+          "Serve chilled as a topping for grilled fish or chicken, or as a dip with tortilla chips."
+        ],
+        "VegNonveg": 1,
+        "Type": "Dessert",
+        "image": "mango_salsa"
+      }
+      
+      
+      
+    
+  ]
+  

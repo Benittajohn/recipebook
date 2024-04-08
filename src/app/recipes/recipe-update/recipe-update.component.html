@@ -1,0 +1,45 @@
+<form #recipeForm="ngForm" (ngSubmit)="onUpdateRecipe()">
+  <div *ngIf="recipe" class="container-fluid">
+    <div class="form-group">
+      <h1 class="recipe-name">{{ updatedRecipe.name }}</h1>
+    </div>
+    <div class="form-group">
+      <label for="ingredients"><h2>Ingredients:<button type="button" class="btn btn-primary add-button" (click)="addIngredient()"><i class="bi bi-plus"></i></button></h2></label>
+      <div *ngFor="let ingredient of updatedRecipe.ingredients; let i = index" class="row align-items-center mb-3">
+        <div class="col">
+          <input type="text" class="text-box" [(ngModel)]="updatedRecipe.ingredients[i]" name="ingredient{{ i }}" required #ingredientField="ngModel">
+          <div *ngIf="ingredientField.invalid && ingredientField.errors?.['required']" class="text-danger">Ingredient is required</div>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-danger del-button" type="button" (click)="removeIngredient(i)"><i class="bi bi-trash"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="steps"><h2>Steps:<button type="button" class="btn btn-primary add-button" (click)="addStep()"><i class="bi bi-plus"></i></button></h2></label>
+      <div *ngFor="let step of updatedRecipe.steps; let i = index" class="row align-items-center mb-3">
+        <div class="col">
+          <input type="text" class="form-control text-box" [(ngModel)]="updatedRecipe.steps[i]" name="step{{ i }}" required #stepField="ngModel">
+          <div *ngIf="stepField.invalid && stepField.errors?.['required']" class="text-danger">Step is required</div>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-danger del-button" type="button" (click)="removeStep(i)"><i class="bi bi-trash"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image:</label>
+      <input type="text" class="form-control" [(ngModel)]="updatedRecipe.image" name="image" required #imageField="ngModel">
+      <div *ngIf="imageField.invalid && imageField.errors?.['required']" class="text-danger">Image is required</div>
+    </div>
+
+    <div *ngIf="recipeForm.invalid && (recipeForm.dirty || recipeForm.touched)" class="alert alert-danger">Form is invalid</div>
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+
+    <button pButton type="submit" class="btn btn-primary update-btn" [disabled]="recipeForm.invalid">Update Recipe</button>
+
+    <p-toast></p-toast>
+  </div>
+</form>

@@ -1,0 +1,22 @@
+.card-img-top
+{
+  width:545px;
+  height: 500px;
+  
+  cursor: pointer;
+}
+.card
+{
+    background-color: bisque;
+}
+.btn
+{
+    background-color: palevioletred;
+    color:black;
+    border:solid 2px plum;
+}
+.name
+{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}

@@ -1,0 +1,8 @@
+
+<div class="updated-recipe-list">
+  <h2 class="head">Update!!!!</h2>
+  <div class="updated-recipe-item" *ngIf="recipeName">
+    {{ recipeName }} has been updated. Kindly check for the latest recipe!!
+    <button class="btn btn-primary" [routerLink]="'/recipe-detail/' + recipeName">See Latest</button>
+  </div>
+</div>

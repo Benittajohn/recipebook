@@ -1,0 +1,71 @@
+.add-button
+{
+    
+
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    size: 20px;
+    margin-left:10px;
+   
+}
+.container-fluid {
+   
+    background-color: papayawhip;
+    width:100%;
+   
+  }
+.add-button .bi {
+    font-size: 1.5rem; 
+  }
+
+.add-button:hover {
+    background-color: #45a049; /* Darker Green */
+  }
+.text-box
+{
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 400px;
+    height:30px;
+   
+    
+    
+    
+}
+.text-box:focus {
+    outline: none;
+    border-color: #66afe9; 
+  }
+  .col-auto {
+    margin-left: 200px; 
+  }
+  
+  
+  .btn-danger {
+    padding: 5px 8px; 
+  }
+  
+.del-button
+{
+    margin-right: 600px;
+    height:30px;
+}
+.update-btn
+{
+    margin-top:10px;
+}
+.recipe-name
+{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,37 @@
+
+<div class="container mt-5" >
+  
+  <button class="btn btn-primary mb-3" (click)="addNewRecipe()">Add New Recipe</button>
+
+  <div class="row" >
+    <div class="col-md-6">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/f5/76/f3/f576f36364ab240e00aab48bbd9e657b.jpg" class="card-img-top" alt="Veg Image">
+        <div class="card-body">
+          <h2 class="card-title name">Veg Recipes</h2>
+          <p class="card-text">Discover our delicious vegetarian recipes.</p>
+          <button class="btn btn-primary btn" routerLink="/recipe-veg">Explore Veg Recipes</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="col-md-6">
+      <div class="card">
+        <img src="https://img.freepik.com/premium-photo/assorted-indian-recipes-food-various_79295-7226.jpg" class="card-img-top" alt="Non-Veg Image">
+        <div class="card-body">
+          <h2 class="card-title name">Non-Veg Recipes</h2>
+          <p class="card-text">Explore our tasty non-vegetarian recipes.</p>
+          <button class="btn btn-primary btn" routerLink="/recipe-nonveg">Explore Non-Veg Recipes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Bootstrap JS scripts (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+

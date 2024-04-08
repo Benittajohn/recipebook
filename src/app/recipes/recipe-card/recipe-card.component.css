@@ -1,0 +1,73 @@
+.card
+{
+    width:350px;
+    margin-top: 20px;
+    align-items: center;
+    
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 4px solid palevioletred; 
+  border-radius: 8px; 
+  padding: 10px; 
+  
+ 
+}
+.btnred
+{
+  background-color: red;
+}
+
+  
+   
+  .recipe-name {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .card-img-top
+  {
+    width:320px;
+    height:320px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+  }
+  #custom-button {
+    font-weight: bold; 
+    transition: all 0.3s ease;
+    color:black;
+    font-size: 20px;
+    
+  }
+  
+  #custom-button:hover {
+    transform: scale(1.1); 
+  }
+  
+  #custom-button:active {
+    background-color: green; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    transform: translateY(1px); 
+  }
+  .row{
+    background-color: transparent;
+  }
+  .fav
+  {
+    background-color: plum;
+    border-radius: 50%;
+  }
+
+  
+  
+  

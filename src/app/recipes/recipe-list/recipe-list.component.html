@@ -1,0 +1,24 @@
+<!-- <div class="row">
+<div *ngFor="let item of recipes" class="shadow-lg col-sm-4 p-3">
+    
+<app-recipe-card [recipe]="item"></app-recipe-card>
+</div>
+</div> -->
+
+
+<div class="row">
+    <div *ngFor="let item of paginatedRecipes" class="shadow-lg col-sm-4 p-3">
+      <app-recipe-card [recipe]="item"></app-recipe-card>
+    </div>
+  </div>
+  
+  <div *ngIf="recipes && recipes.length > itemsPerPage" class="pagination">
+    <button class="btn btn-primary prev-btn" (click)="previousPage()" [disabled]="currentPage === 1"><i class="bi bi-caret-left-fill"></i></button>
+    <span class="space">"  "</span>
+    <span> {{ currentPage }}   </span>
+    <button class="btn btn-primary next-btn" (click)="nextPage()" [disabled]="currentPage === totalPages"><i class="bi bi-caret-right-fill"></i></button>
+  </div>
+  
+
+
+    

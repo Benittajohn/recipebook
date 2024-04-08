@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    background-color:papayawhip;
+  }
+  .pagination
+  {
+    align-items: center;
+  }
+  .prev-btn
+  {
+    margin-left: 575px;
+    margin-top: 10px;
+    
+  }
+  .next-btn
+  {
+    margin-left:20px;
+    margin-top:10px;
+  }
+  .space
+  {
+    color:transparent;
+  }

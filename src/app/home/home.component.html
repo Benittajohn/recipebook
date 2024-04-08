@@ -1,0 +1,72 @@
+
+<div *ngIf="errorMessage" class="error-message">
+  <img src="https://static.vecteezy.com/system/resources/previews/023/642/055/non_2x/error-message-big-sign-tiny-people-and-operating-system-error-warning-window-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg" alt="error">
+</div>
+
+
+<div *ngIf="!errorMessage">
+<app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+
+<h1 class="text">Welcome to CookBook!!!</h1>
+
+
+<p-carousel [value]="recipes" [numVisible]="3" [numScroll]="3" [circular]="false">
+  <ng-template let-product pTemplate="item">
+      <div class="border-9 surface-border border-round m-2 text-center py-5 px-3 box">
+          <div class="mb-3">
+              <img src="{{ product.image}}" [alt]="product.name" class="w-6 shadow-2 recipe-image" />
+          </div>
+          <div>
+              <h2 class="mb-1">{{ product.name }}</h2>
+              
+              
+              <div class="mt-5 flex align-items-center justify-content-center gap-2">
+                <p-button icon="pi pi-angle-double-right" [rounded]="true" class="btn1" routerLink="/recipe-detail/{{product.name}}"></p-button>
+                
+            </div>
+            
+          </div>
+      </div>
+  </ng-template>
+</p-carousel>
+
+
+
+<div id="categoryPortion"  >
+  <h2 id="categoryTitle" class="text">Unique Selections</h2>
+  <div class="container" id="CategoryList">
+      <div class="row" >
+          <div class="col-lg-2 col-md-6 col-sm-6" id="categoryProduct">
+              <img src="https://as2.ftcdn.net/v2/jpg/05/51/07/25/1000_F_551072558_rENux9fqlec5GPBJSaToT69xjcYiGxje.jpg" id="categoryImg" (click)="navigateToRecipePage('MainDish')"/>       
+              <h3 id="categorySubHead" class="text">Maincourse</h3>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6" id="categoryProduct">
+              <img src="/assets/chicken65.jpg" id="categoryImg" (click)="navigateToRecipePage('Starter')" />
+              <h3 id="categorySubHead" class="text">Starter </h3>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6" id="categoryProduct">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3D3-S6hPKja5X7vPX9_9ZtBkPuDGWFhmzQ&usqp=CAU" id="categoryImg" (click)="navigateToRecipePage('Dessert')"/>
+            <h3 id="categorySubHead" class="text">Dessert </h3>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-6" id="categoryProduct">
+          <img src="https://cookingwithayeh.com/wp-content/uploads/2023/11/Healthy-Caesar-Salad-Without-Anchovies-SQ-5.jpg" id="categoryImg" (click)="navigateToRecipePage('Salad')"/>
+          <h3 id="categorySubHead" class="text">Salads</h3>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-sm-6" id="categoryProduct">
+        <img src="https://www.southernliving.com/thmb/DwsVp7xH_SCCIBBbLTPbVBzOhfk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2678201_HIHAn_27538-2000-47842017c4a9440ea1c615cc941c42f2.jpg" id="categoryImg" (click)="navigateToRecipePage('Soup')"/>
+        <h3 id="categorySubHead" class="text">Soups</h3>
+    </div>
+
+    <div class="col-lg-2 col-md-6 col-sm-6" id="categoryProduct">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1v9SnwMJN6LtLxd9l4jf-BBBD10jDzrdmZ6kSIb5nA&s" id="categoryImg" (click)="navigateToRecipePage('Beverage')"/>
+      <h3 id="categorySubHead" class="text">Beverages</h3>
+  </div>
+          
+      </div>
+      
+  </div>
+</div>
+</div>

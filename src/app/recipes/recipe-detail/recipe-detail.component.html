@@ -1,0 +1,30 @@
+<div *ngIf="recipe" class="container-fluid ">
+  
+  <div class="row">
+    
+    <div class="col-md-6 id">
+      <img src="{{ recipe.image }}" alt="Recipe Image" class="img-fluid">
+    </div>
+
+   
+    <div class="col-md-6 id">
+      <h1 class="heading">{{ recipe.name }}</h1>
+      <h3 class="heading">Ingredients:</h3>
+      <ul>
+        <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+      </ul>
+      
+      
+      <h3 class="heading">Steps:</h3>
+      <ol>
+        <li *ngFor="let step of recipe.steps">{{ step }}</li>
+      </ol>
+
+      <ul>
+        <button class="btn btn-primary btn1" (click)="goToUpdatePage(recipe.id)">Update</button>
+        <button class="btn btn-primary btn2" (click)="deleteRecipe(recipe.id)">Delete</button>
+      </ul>
+    </div>
+  </div>
+</div>
+
